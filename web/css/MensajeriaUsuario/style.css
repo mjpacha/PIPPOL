@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/04/2021, 11:56:51
+    Author     : mjpac
+*/
+
+html,body{
+    height: 100%;
+}
+
+.chat{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+   height: 60px;
+}
+
+.chat li{
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #B3A9A9;  
+}
+
+.chat li .chat-body p{
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon{
+    margin-right: 5px;   
+}
+/*
+.panel-body{
+    overflow-y:scroll;
+    height: 150px;
+    width: 490px;
+    
+}
+*/

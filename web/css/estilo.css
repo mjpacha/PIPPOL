@@ -1,0 +1,610 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+Created on : 17-feb-2021, 11:35:51
+Author     : Mauricio
+*/
+
+* {
+    margin: 0px;
+    paddin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+/*----------------------------------------------------------------------------*/
+/*VISTAS REGISTRO INDEX PREGUNTAS DE SEGURIDAD */
+
+#contenedor1 {
+    background: #ffffff;
+    width: 300px;
+    margin: auto;
+    margin-top: 0px;
+    align-content: center;
+    height: 300px;
+    position: relative;
+}
+
+#form1 {
+    width: 100%;
+    box-sizing: border-box;
+    top: 30%;
+    position: absolute;
+}
+
+.rowdiv{
+    background: white;
+    color: black;
+    display: flex;
+    align-items: flex-end;
+}
+
+.coldiv{
+    width: 50%;
+}
+/*Para poner borde a los input*/
+
+.white-grad {
+    color: #313149;
+    padding: 1px;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    margin: 5px;
+}
+
+.white-grad:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #F02700, #4A05F0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    border: 1px;
+}
+
+input[type="text"] {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px;
+    border: 0;
+    border-radius: 25px;
+    width: 93%;
+}
+
+input:focus {
+    outline: none;
+    border: 0;
+}
+
+.div-button {
+    text-align: center;
+}
+
+
+#form1 input[type="password"] {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px;
+    border: 0;
+    border-radius: 25px;
+    width: 93%;
+}
+
+select {
+    background-image: url(../imagen/flecha.jpg);
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    background-size: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border-radius: 25px;
+    font-size: 15px;
+    width: 100%;
+    text-align: left;
+    border: 0;
+    padding: 10px;
+}
+
+select:focus {
+    outline: none;
+    border: 0;
+}
+
+#form1 h1 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+input[type="Submit"] {
+    background: linear-gradient(to right, #F02700, #4A05F0);
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: 900;
+    border: 0;
+    /*formato de los botones*/
+    width: 50%;
+    height: 30px;
+    font-size: 15px;
+    margin: 10px 10px 10px 10px;
+}
+
+input[type="button"] {
+    background: linear-gradient(to right, #F02700, #4A05F0);
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: 900;
+    border: 0;
+    /*formato de los botones*/
+    width: 50%;
+    height: 30px;
+    font-size: 15px;
+    margin: 10px 10px 10px 10px;
+}
+
+.logo {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background: #1b4f72;
+    color: #ffffff;
+}
+
+input[type="button"]:hover {
+    background: #1b4f72;
+    color: #ffffff;
+}
+/*----------------------------------------------------------------------------*/
+/*perfil usuario */
+
+#form3{
+    width:100%;
+    /*superior derecha inferior izquierda*/
+    padding: 20px 20px 10px 20px;
+    box-sizing: border-box;
+}
+.notificaciones{
+    margin-left:  550px;
+    margin-right: 50px;
+}
+#contenedor3{
+    background: #ffffff;
+    width: 90%;
+    height:20%;
+    margin:auto;
+    border:2px solid black;
+    margin-top:20px;
+
+}
+.global,.cerca,.buscar{
+    width: 9%;
+    height:60%;
+    background: linear-gradient(to right,#F02700, #4A05F0);
+    border-radius: 25% 5% 25% 5%;
+    cursor: pointer;
+    font-size: 80%;
+    margin: 0px 1% 1% 1%;
+
+    color:#ffffff; 
+}
+.live,.academico,.music{
+    width: 12%;
+    height:60%;
+    background: linear-gradient(to right,#F02700, #4A05F0);
+    border-radius: 25% 5% 25% 5%;
+    cursor: pointer;
+    font-size:70%;
+    margin: 0% 1% 1% 1%;
+
+    color:#ffffff;
+}
+
+#contenedor3 input[type="text"]{
+    border-image-source: linear-gradient(to right,#F02700, #4A05F0);/*permite añadir el degradado de rojo a azul */
+    border-image-slice: 1;/*permite añadir el degradado de rojo a azul */
+    width:20%;
+    height: 10%;
+    font-size: 70%;
+    font-weight: bold;
+    text-align: left;
+    margin: 0% 1% 1% 0%;
+    border-radius: 25%;
+}
+.fotoperfil{
+    margin-left: 5%;
+    border: 2px solid;
+    border-color: #4A05F0;   
+    border-radius: 50%;
+}
+#contenedor4 .logo2{
+    margin-left: 10%;
+    margin-top:5%;
+}
+#contenedor4 .notificaciones{
+    margin-top: 10%;
+}
+.flex-column2{
+    margin-top: 40%;
+}
+.colum1{
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    background: #ffffff;
+    border-right:  5px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top,#F02700, #4A05F0);
+    -webkit-border-image: -webkit-linear-gradient(top,#F02700, #4A05F0);
+    border-image: linear-gradient(top,#F02700, #4A05F0);
+    border-image-slice: 1;
+}
+
+.colum4{
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    background: #ffffff;
+    border-left:  5px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top,#F02700, #4A05F0);
+    -webkit-border-image: -webkit-linear-gradient(top,#F02700, #4A05F0);
+    border-image: linear-gradient(top,#F02700, #4A05F0);
+    border-image-slice: 1;
+}
+
+#contenedor6{
+    background: #ffffff;
+    width: 780px;
+    height:500px;
+    margin:auto;
+
+}
+.colum2{
+    background: #ffffff;
+    border-right:  5px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top,#F02700, #4A05F0);
+    -webkit-border-image: -webkit-linear-gradient(top,#F02700, #4A05F0);
+    border-image: linear-gradient(top,#F02700, #4A05F0);
+    border-image-slice: 1;  
+}
+.colum2 table{
+    margin: auto;
+}
+.colum2 table td{
+    text-align: center;
+    font-size: 120%;
+}
+.colum3,a, table td{
+    text-align: center;
+    font-size: 100%;   
+}
+#fila{
+    background: #ffffff;
+    width: 780px;
+    height:200px;
+    margin:auto;
+    margin-top:0px;
+}
+/*reporte ganancias*/
+
+.tablaganancia table
+{
+    margin: auto;
+    text-align: center;
+    font-size: 120%;
+}
+/*----------------------------------------------------------------------------*/
+/*VISTA REGISTRO2 */
+.tituloreg1{
+    color: #ffffff;
+    background: linear-gradient(to right,#F02700, #4A05F0);
+    font-size: 20px;
+    border-radius: 25px;
+    width: 550px;
+    height: 60px;
+    margin-left: 80px;
+    text-align: center;
+}
+.imagencentro{
+    margin-top: 50px;
+    margin-left: 350px;
+    margin-bottom: 25px;
+}
+#fila2{
+    background: #ffffff;
+    width: 1500px;
+    height:200px;
+    margin:auto;
+    margin-top:0px;
+}
+#fila2 input[type="submit"]{
+    width: 50%;
+    height: 40px;
+    background: linear-gradient(to right,#F02700, #4A05F0);
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 900;
+}
+.colum{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+#fila2 img{
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#fila2 input[type="submit"]:hover{
+    background: #1b4f72;  
+    color:#ffffff;
+}
+.info1{
+    border: double 1px transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(#fff,#fff ), radial-gradient(circle at top left ,#F02700, #4A05F0);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-align: center;
+    height:  80px;
+    font-size: 14px;
+}
+.tipo{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 0px;
+}
+/*----------------------------------------------------------------------------*/
+/*Perfil de usuario*/
+#contenedor5{
+    background: #ffffff;
+    width: 60%;
+    height:20%;
+    margin :auto;
+    margin-top:0%;
+    text-align: center;
+}
+.boton{
+    position: relative;
+    width: 10%;
+    height: 150%;
+    border-radius: 50%;
+    left: 48%;
+    top:-10px;
+}
+#texto{
+    text-align: center;
+    color:white;
+}
+input#cambiarfoto{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    width: 100%;
+    height:100%;
+    opacity: 0;
+
+}
+/*
+.cambiarfoto{
+    width: 4%;
+    height:50%;
+    background: linear-gradient(to right,#F02700, #4A05F0);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 120%;
+    font-weight: bold;
+    color:#ffffff; 
+    text-align: center;
+}*/
+.fotogrande{
+    margin-left: 5%;
+    border: 2px solid;
+    border-color: #ffffff;   
+    border-radius: 50%;
+}
+
+
+
+
+/* Para diseño de chat*/
+
+form, p, span {
+    margin:0;
+    padding:0; }
+
+input { font:12px arial; }
+
+a {
+    color:#0000FF;
+    text-decoration:none; }
+
+a:hover { text-decoration:underline; }
+
+
+
+#loginform { padding-top:18px; }
+
+#loginform p { margin: 5px; }
+
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:10px;
+    padding:1px;
+    background:#ffffff;
+    height:400px;
+    width:230px;    
+    text-align:right;
+    border: double 1px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), 
+        linear-gradient(to right, red, purple);
+    background-origin: border-box;
+    background-clip: content-box, border-box;    
+    overflow:auto; }
+
+#usermsg {
+    width:220px;
+    border: double 1px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), 
+        linear-gradient(to right, red, purple);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#submit { width: 60px; }
+
+.error { color: #ff0000; }
+
+#menu { padding:12.5px 25px 12.5px 25px; }
+
+.welcome { float:left; }
+
+.logout { float:right; }
+
+.msgln { margin:0 0 2px 0; }
+
+
+
+/*diseño de caja de texto chat*/
+input.buscar {
+    border: 0px;
+    width: 150px;
+    position: relative;
+    background: transparent;
+    outline: none;
+    bottom: 4px;
+    padding: 2px;
+}
+input.image_buscar {
+    width: 20px;
+    border: 0px;
+    position: relative;
+    top:1px;
+}
+
+
+/*publicaciones*/
+#chatbox1 {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:10px;
+    padding:1px;
+    background:#ffffff;    
+    height: 500px;
+    width: 550px;    
+    text-align:left;
+    border: double 1px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), 
+        linear-gradient(to right, red, purple);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    overflow:auto;
+}
+
+
+/*Estilos publicaciones*/
+#tablepublicacionreacciones img.d-regalos {
+    border: double 2px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(white, white), 
+        linear-gradient(to right, red, purple);
+    background-origin: border-box;
+    background-clip: content-box, border-box;                                         
+    height:90%; width: 90%;
+    float: left;
+}
+
+#tablepublicacionreacciones img.d-likes {
+    border: double 2px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(white, white), 
+        linear-gradient(to right, red, purple);
+    background-origin: border-box;
+    background-clip: content-box, border-box;                                         
+    height:88%; width: 88%;
+    float: left;
+}
+
+
+
+
+/*Estilo para chat*/
+#form2 input[type="text"] {
+    width:150px;
+    border: double 1px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), 
+        linear-gradient(to right, red, purple);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    height:auto;
+    max-height: 90px;
+    width: 55%;
+}
+
+/*diseño de imagen de las personas que sigue*/
+#tablefotoseguidos img {
+    float: center;         
+    border: double 3px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), 
+        linear-gradient(to right, red, purple);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    height:auto; 
+    max-height: 90px;   
+    width: 80%;
+}
+
+/* Diseño imagen de usuario con el que se está en chat */
+#tablefotochat img.fotochat {
+    float: center;         
+    border: double 3px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), 
+        linear-gradient(to right, red, purple);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    height:auto; 
+    max-height: 90px;   
+    width: 80%;
+}
+
+/*publicaciones propias del usuario*/
+#tablePublicacionesPropias img.publicacionesPropias {  
+    border: double 3px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), 
+        linear-gradient(to right, red, purple);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
