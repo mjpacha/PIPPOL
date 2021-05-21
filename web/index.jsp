@@ -24,7 +24,7 @@
                 <%--CAJAS DE TEXTO PARA USUARIO Y CONTRASEÑA--%>
                 <h1>Usuario:</h1>
                 <div class="white-grad">
-                    <input type="text" name="respuesta1" placeholder="Alias o mail" required/>
+                    <input type="text" name="respuesta1" placeholder="Alias o mail desde git" required/>
                 </div>
                 <h1>Contraseña:</h1>
                 <div class="white-grad">
